@@ -1,0 +1,17 @@
+<!-- templates/login.html -->
+{% extends "base.html" %}
+{% block title %}Login Pustakawan - PustakaHijau{% endblock %}
+{% block content %}
+<div class="max-w-sm mx-auto bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
+    <h2 class="text-2xl font-bold text-slate-800 mb-1">🔐 Login Pustakawan</h2>
+    <p class="text-sm text-slate-500 mb-6">Halaman ini khusus pustakawan.</p>
+    <form method="POST" class="space-y-4">
+        <div>
+            <label class="block text-sm font-medium text-slate-700 mb-1">Password</label>
+            <input type="password" name="password" required autofocus
+                   class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500">
+        </div>
+        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 rounded-lg transition text-sm">Masuk</button>
+    </form>
+</div>
+{% endblock %}
